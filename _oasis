@@ -1,7 +1,7 @@
 OASISFormat: 0.4
 Name:        ocaml-statvfs
 Version:     0.0.1
-Synopsis:    Ctypes binding for OSX and Linux statvfs syscall
+Synopsis:    Ctypes binding for POSIX statvfs syscall
 Authors:     Mike McClurg
 License:     ISC
 Plugins:     META (0.4)
