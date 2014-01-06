@@ -1,5 +1,5 @@
 open Ctypes
-open Statfs
+open Statvfs
 
 let print_statvfs stats =
 	Printf.printf "f_bsize:  %Lu\n" stats.f_bsize;

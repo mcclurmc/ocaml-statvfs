@@ -1,4 +1,4 @@
 _build
 setup.bin
 setup.log
-statfs_test.byte
+statvfs_test.byte

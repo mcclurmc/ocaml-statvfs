@@ -1,26 +1,26 @@
 OASISFormat: 0.4
-Name:        ocaml-statfs
+Name:        ocaml-statvfs
 Version:     0.0.1
-Synopsis:    Ctypes binding for OSX and Linux statfs syscall
+Synopsis:    Ctypes binding for OSX and Linux statvfs syscall
 Authors:     Mike McClurg
 License:     ISC
 Plugins:     META (0.4)
 
-Library statfs
+Library statvfs
   Path:       lib
   BuildTools: ocamlbuild
-  Modules:    Statfs
+  Modules:    Statvfs
   BuildDepends: ctypes, ctypes.foreign
   ByteOpt:      -thread -warn-error +a -bin-annot -short-paths -g
   NativeOpt:    -thread -warn-error +a -bin-annot -short-paths -g
 
-Test "statfs-test"
-  Command: ./statfs_test.byte
+Test "statvfs-test"
+  Command: ./statvfs_test.byte
 
-Executable "statfs-test"
+Executable "statvfs-test"
   Path:       test
   BuildTools: ocamlbuild
-  MainIs:     statfs_test.ml
-  BuildDepends: statfs
+  MainIs:     statvfs_test.ml
+  BuildDepends: statvfs
   ByteOpt:      -thread -warn-error +a -bin-annot -short-paths -g
   NativeOpt:    -thread -warn-error +a -bin-annot -short-paths -g

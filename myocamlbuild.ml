@@ -1,5 +1,5 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 63a20a32f0353463a6a1f64a66e8ff08) *)
+(* DO NOT EDIT (digest: 52f2e19d10548161e051c9e83ff811ae) *)
 module OASISGettext = struct
 (* # 22 "src/oasis/OASISGettext.ml" *)
 
@@ -555,11 +555,11 @@ end
 open Ocamlbuild_plugin;;
 let package_default =
   {
-     MyOCamlbuildBase.lib_ocaml = [("statfs", ["lib"], [])];
+     MyOCamlbuildBase.lib_ocaml = [("statvfs", ["lib"], [])];
      lib_c = [];
      flags =
        [
-          (["oasis_library_statfs_byte"; "ocaml"; "link"; "byte"],
+          (["oasis_library_statvfs_byte"; "ocaml"; "link"; "byte"],
             [
                (OASISExpr.EBool true,
                  S
@@ -572,7 +572,7 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_library_statfs_native"; "ocaml"; "link"; "native"],
+          (["oasis_library_statvfs_native"; "ocaml"; "link"; "native"],
             [
                (OASISExpr.EBool true,
                  S
@@ -585,7 +585,7 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_library_statfs_byte"; "ocaml"; "ocamldep"; "byte"],
+          (["oasis_library_statvfs_byte"; "ocaml"; "ocamldep"; "byte"],
             [
                (OASISExpr.EBool true,
                  S
@@ -598,7 +598,7 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_library_statfs_native"; "ocaml"; "ocamldep"; "native"],
+          (["oasis_library_statvfs_native"; "ocaml"; "ocamldep"; "native"],
             [
                (OASISExpr.EBool true,
                  S
@@ -611,7 +611,7 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_library_statfs_byte"; "ocaml"; "compile"; "byte"],
+          (["oasis_library_statvfs_byte"; "ocaml"; "compile"; "byte"],
             [
                (OASISExpr.EBool true,
                  S
@@ -624,7 +624,7 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_library_statfs_native"; "ocaml"; "compile"; "native"],
+          (["oasis_library_statvfs_native"; "ocaml"; "compile"; "native"],
             [
                (OASISExpr.EBool true,
                  S
@@ -637,7 +637,7 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_executable_statfs_test_byte"; "ocaml"; "link"; "byte"],
+          (["oasis_executable_statvfs_test_byte"; "ocaml"; "link"; "byte"],
             [
                (OASISExpr.EBool true,
                  S
@@ -650,7 +650,8 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_executable_statfs_test_native"; "ocaml"; "link"; "native"],
+          (["oasis_executable_statvfs_test_native"; "ocaml"; "link"; "native"
+           ],
             [
                (OASISExpr.EBool true,
                  S
@@ -663,7 +664,8 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_executable_statfs_test_byte"; "ocaml"; "ocamldep"; "byte"],
+          (["oasis_executable_statvfs_test_byte"; "ocaml"; "ocamldep"; "byte"
+           ],
             [
                (OASISExpr.EBool true,
                  S
@@ -677,7 +679,7 @@ let package_default =
                    ])
             ]);
           ([
-              "oasis_executable_statfs_test_native";
+              "oasis_executable_statvfs_test_native";
               "ocaml";
               "ocamldep";
               "native"
@@ -694,7 +696,7 @@ let package_default =
                       A "-g"
                    ])
             ]);
-          (["oasis_executable_statfs_test_byte"; "ocaml"; "compile"; "byte"],
+          (["oasis_executable_statvfs_test_byte"; "ocaml"; "compile"; "byte"],
             [
                (OASISExpr.EBool true,
                  S
@@ -708,7 +710,7 @@ let package_default =
                    ])
             ]);
           ([
-              "oasis_executable_statfs_test_native";
+              "oasis_executable_statvfs_test_native";
               "ocaml";
               "compile";
               "native"
@@ -732,6 +734,6 @@ let package_default =
 
 let dispatch_default = MyOCamlbuildBase.dispatch_default package_default;;
 
-# 736 "myocamlbuild.ml"
+# 738 "myocamlbuild.ml"
 (* OASIS_STOP *)
 Ocamlbuild_plugin.dispatch dispatch_default;;

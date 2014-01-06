@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: fc5fcf34c31fe32419d36ad9dc66fe39)
+# DO NOT EDIT (digest: 2ba829d3364eb793662c80dd71ee7b74)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -13,23 +13,23 @@
 ".git": not_hygienic
 "_darcs": -traverse
 "_darcs": not_hygienic
-# Library statfs
-"lib/statfs.cmxs": use_statfs
-<lib/statfs.{cma,cmxa}>: oasis_library_statfs_byte
-<lib/*.ml{,i}>: oasis_library_statfs_byte
-<lib/statfs.{cma,cmxa}>: oasis_library_statfs_native
-<lib/*.ml{,i}>: oasis_library_statfs_native
+# Library statvfs
+"lib/statvfs.cmxs": use_statvfs
+<lib/statvfs.{cma,cmxa}>: oasis_library_statvfs_byte
+<lib/*.ml{,i}>: oasis_library_statvfs_byte
+<lib/statvfs.{cma,cmxa}>: oasis_library_statvfs_native
+<lib/*.ml{,i}>: oasis_library_statvfs_native
 <lib/*.ml{,i}>: pkg_ctypes
 <lib/*.ml{,i}>: pkg_ctypes.foreign
-# Executable statfs-test
-"test/statfs_test.byte": oasis_executable_statfs_test_byte
-<test/*.ml{,i}>: oasis_executable_statfs_test_byte
-"test/statfs_test.byte": oasis_executable_statfs_test_native
-<test/*.ml{,i}>: oasis_executable_statfs_test_native
-"test/statfs_test.byte": use_statfs
-"test/statfs_test.byte": pkg_ctypes
-"test/statfs_test.byte": pkg_ctypes.foreign
-<test/*.ml{,i}>: use_statfs
+# Executable statvfs-test
+"test/statvfs_test.byte": oasis_executable_statvfs_test_byte
+<test/*.ml{,i}>: oasis_executable_statvfs_test_byte
+"test/statvfs_test.byte": oasis_executable_statvfs_test_native
+<test/*.ml{,i}>: oasis_executable_statvfs_test_native
+"test/statvfs_test.byte": use_statvfs
+"test/statvfs_test.byte": pkg_ctypes
+"test/statvfs_test.byte": pkg_ctypes.foreign
+<test/*.ml{,i}>: use_statvfs
 <test/*.ml{,i}>: pkg_ctypes
 <test/*.ml{,i}>: pkg_ctypes.foreign
 # OASIS_STOP
