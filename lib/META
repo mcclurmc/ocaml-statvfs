@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: 53767318794d146a201891e81f54a867)
+version = "0.0.1"
+description = "Ctypes binding for OSX and Linux statfs syscall"
+requires = "ctypes ctypes.foreign"
+archive(byte) = "statfs.cma"
+archive(byte, plugin) = "statfs.cma"
+archive(native) = "statfs.cmxa"
+archive(native, plugin) = "statfs.cmxs"
+exists_if = "statfs.cma"
+# OASIS_STOP
+
